@@ -1,6 +1,9 @@
 # fiveo
 [![Build Status](https://travis-ci.org/june07/fiveo.svg?branch=master)](https://travis-ci.org/june07/fiveo)
 
+![](https://res.cloudinary.com/june07/image/upload/v1566280410/june07/fiveoDemonstration.gif)
+https://youtu.be/q9c3ZXq75Kg
+
 A tiny JavaScript library to add some sweetness to Node's core inspector module.  Adds some key missing features:
 * Adding the ability to start the inspector via the [SIGNAL method](https://nodejs.org/api/process.html) using ANY PORT and not just 9229.  Opens up the possible debug applications and workflows tremendously.
 * STOPPING the inspector instance using the SIGUSR2 signal (will stop both sessions started with SIGUSR2 and the native SIGUSR1).  It's likely that leavning the inspector listening (production environments...) is a bad idea. 
