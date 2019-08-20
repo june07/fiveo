@@ -1,0 +1,29 @@
+{
+  "name": "inspector",
+  "version": "1.0.0",
+  "description": "Node Inspector API Sugar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/june07/inspector.git"
+  },
+  "keywords": [
+    "javascript",
+    "npm",
+    "node.js",
+    "inspector",
+    "debug"
+  ],
+  "author": "june07",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/june07/inspector/issues"
+  },
+  "homepage": "https://github.com/june07/inspector#readme",
+  "devDependencies": {
+    "debug": "^4.1.1"
+  }
+}
