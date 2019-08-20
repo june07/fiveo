@@ -1,6 +1,6 @@
 {
   "name": "fiveo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node Inspector API Sugar",
   "main": "index.js",
   "scripts": {
