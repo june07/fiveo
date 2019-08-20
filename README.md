@@ -1,7 +1,7 @@
 # fiveo
 [![Build Status](https://travis-ci.org/june07/fiveo.svg?branch=master)](https://travis-ci.org/june07/fiveo)
 
-![](https://res.cloudinary.com/june07/image/upload/v1566280410/june07/fiveoDemonstration.gif)
+![Fiveo Demonstration](https://i.imgur.com/Lad67se.gif)
 https://youtu.be/q9c3ZXq75Kg
 
 A tiny JavaScript library to add some sweetness to Node's core inspector module.  Adds some key missing features:
