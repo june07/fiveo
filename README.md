@@ -11,9 +11,9 @@ $ npm install fiveo
 ```
 
 ## Usage
-`fiveo` exposes a function; simply pass this function the name of your module, and it will return a decorated version of `console.error` for you to pass debug statements to. This will allow you to toggle the debug output for different parts of your module as well as the module as a whole.
+`fiveo` simply needs to be required in your code.
 
-Example [_yourapp.js_](./examples/node/app.js):
+Example:
 
 ```js
 require('fiveo');
