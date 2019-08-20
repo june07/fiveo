@@ -25,7 +25,7 @@
 'use strict';
 
 const inspector = require('inspector'),
-    debug = require('debug')('inspector');
+    debug = require('debug')('fiveo');
 
 let inspectorState, host, port;
 

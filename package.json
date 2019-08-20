@@ -10,9 +10,7 @@
     "url": "git+https://github.com/june07/fiveo.git"
   },
   "keywords": [
-    "javascript",
-    "npm",
-    "node.js",
+    "inspect",
     "inspector",
     "debug"
   ],
