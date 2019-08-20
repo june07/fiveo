@@ -25,7 +25,10 @@
 'use strict';
 
 const inspector = require('inspector'),
-    debug = require('debug')('fiveo');
+    debug = require('debug')('fiveo'),
+    color = '\u001b[32m', // green,
+    reset = '\u001b[0m',
+    name = 'fiveo';
 
 let inspectorState, host, port;
 
@@ -40,15 +43,21 @@ let inspectorState, host, port;
 })();
 
 function handle(signal) {
-    debug(`Received ${signal}`);
+    //debug(`Received ${signal}`);
     (inspector.url() === undefined) ? openInspector() : closeInspector();
 }
 function openInspector() {
+    process.stdout.write(`😃 ${color}${name} activated the inspector:  ${reset}`)
     inspector.open(port, host);
-    debug(`URL: ${inspector.url()}`);
+    inspector.console.log(`😃 ${color}${name} activated this inspector. ${reset}`);
+    debug(`${color}${name} activated this inspector: ${inspector.url()}.`);
 }
 function closeInspector() {
+    let url = inspector.url();
+    inspector.console.log(`😉 ${color}${name} deactivating this inspector. ${reset}`);
     inspector.close();
+    debug(`${color}${name} deactivated the inspector: ${reset}${url}.`);
+    if (! debug.enabled) console.log(`😉 ${color}${name} deactivated the inspector: ${reset}${url}.`);
 }
 
 process.on('SIGUSR2', handle);
